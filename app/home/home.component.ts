@@ -4,10 +4,14 @@ import {SimpleService} from "../services/services.module";
 @Component({
     selector:'home',
     template: `
-        <div>I'm a Home Component</div>
-        <div>{{simpleService.message}}</div>
-        <widget-one [message]="simpleService.message"></widget-one>
-        <widget-one [message]="'Hola mundo'"></widget-one>
+        <!--<widget-two>
+            <widget-one [message]="simpleService.message"></widget-one>
+        </widget-two>-->
+        <widget-two>
+            <h2 header>Title</h2>
+            <div content>Mas contenido</div>
+            <h3 footer>Footer</h3>
+        </widget-two>
     `
 })
 export class HomeComponent{
